@@ -4,10 +4,10 @@
 
 int main()
 {
-    AbstractFactory* factroy = new StandardFactory;
-    Ship* ship = factroy->createShip();
+    AbstractFactory* factory = new StandardFactory;
+    Ship* ship = factory->createShip();
     std::cout << ship->getProperty();
     delete ship;
-    delete factroy;
+    delete factory;
     return 0;
 }
